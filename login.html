@@ -2,54 +2,45 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <!-- スマホでも大きさが等倍 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vue sample</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="css/login.css"/>
 </head>
 
 <body>
-  <div style="text-align:center;">
-    <div id = "app">
-      {{ message }}
-    </div>
-    
-    <script>
-      var app = new Vue({
-          el: "#app",
-          data: {
-              message: "ログイン画面"
-          }
-      })
-    </script>
-    
-    <div class="signup">
-      <p>ID</p>
-    
-      <table class="sign" align="center">
-        <tr>
-         <td><input type="id" v-model="mailaddress"/></td>
-        </tr>
-      </table>
-    
-      <p>パスワード</p>
-        
-      <table class="sign" align="center">
-        <tr>
-          <td><input type="password" v-model="password"/></td>
-       </tr>
-      </table>
-       
-    </div>
-    
-    <div id="click">
-      <button v-on:click="login">ログイン</button>
-    </div>
+  <div id = "app">
+    {{ message }}
+  </div>
+  
+  <div class="signup">
+    <p>ID</p>
+    <table class="sign" align="center">
+      <tr>
+        <td><input type="id" v-model="mailaddress"/></td>
+      </tr>
+    </table>
+
+    <p>パスワード</p>
+    <table class="sign" align="center">
+      <tr>
+        <td><input type="password" v-model="password"/></td>
+      </tr>
+    </table>
+  </div>
+  
+  <div id="click">
+    <button v-on:click="login">ログイン</button>
   </div>
 
-  <script src="js/main.js"></script>
   <script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            message: "ログイン画面"
+        }
+    })
+
     var example1 = new Vue({
     el: '#click',
       data: {
@@ -60,9 +51,21 @@
       }
     })
   </script>
-
+  
   <style>
+    body {
+      text-align: center;
+      margin:100px auto;
+    }
 
+    
+    #click button{
+      background: #f8a100;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
   </style>
 
 </body>
