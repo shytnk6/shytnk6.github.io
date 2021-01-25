@@ -1,0 +1,13 @@
+body {
+  font-size: 16px;
+  text-align: center;
+  margin:100px auto;
+}
+
+#click button{
+  background: #f8a100;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
