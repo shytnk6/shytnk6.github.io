@@ -10,7 +10,7 @@ var app = new Vue({
 
 var example1 = new Vue({
 //elements の略である el
-  el: '#click',
+  el: '#login',
   data: {
     // ログインを押すとalertが表示される
     login: function() {

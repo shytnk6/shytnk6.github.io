@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- スマホでも大きさが等倍 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue sample</title>
+    <link rel="stylesheet" href="css/login2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id = "app">
+    <h1>{{ message }}</h1>
+  </div>
+
+  <div id="doLogin">
+    <p>ID</p>
+    <!-- <input type="text" placeholder="user id" v-model="userId" /> -->
+    <input type="text" placeholder="user id" id="userId" />
+    <p>パスワード</p>
+    <!-- <input type="password" placeholder="password" v-model="password" /> -->
+    <input type="password" placeholder="password" id="password" />
+    <div id="click">
+      <button v-on:click="login" type="submit">ログイン</button>
+    </p>
+  </div>
+
+
+  <script src="js/main2.js"></script>
+</body>
+</html>
+
+
+
+<!-- ショートカットキー
+command + enterで次の行の挿入
+command + enter +shift で前の行に挿入 -->
+
+<!-- 検索のあと
+command +Gで次へ、
+置換操作
+OPtion + command +f -->

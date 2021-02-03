@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../ドットインストール学習"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ドットインストール学習"
+	}
+}
